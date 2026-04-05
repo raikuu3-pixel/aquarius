@@ -96,14 +96,20 @@
         </article>
       </div>
 
-      <article class="dashboard-box detail-box">
-        <div class="section-head">
-          <h3>Detail pesanan</h3>
-          <p>Klik tombol lihat pada tabel untuk membuka detail lengkap pesanan.</p>
-        </div>
+      <article class="detail-modal" id="detailModal" aria-hidden="true">
+        <div class="detail-modal-backdrop" data-close-modal></div>
+        <div class="dashboard-box detail-box detail-panel">
+          <div class="detail-modal-top">
+            <div class="section-head">
+              <h3>Detail pesanan</h3>
+              <p>Klik tombol silang untuk menutup frame ini.</p>
+            </div>
+            <button class="modal-close" id="closeDetailModal" type="button" aria-label="Tutup detail">&times;</button>
+          </div>
 
-        <div class="order-detail empty-detail" id="orderDetail">
-          <p>Belum ada pesanan yang dipilih.</p>
+          <div class="order-detail empty-detail" id="orderDetail">
+            <p>Belum ada pesanan yang dipilih.</p>
+          </div>
         </div>
       </article>
     </section>
@@ -112,5 +118,39 @@
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
   <script src="admin.js"></script>
+  <script>
+    const detailModal = document.getElementById("detailModal");
+    const closeDetailModal = document.getElementById("closeDetailModal");
+
+    function openDetailModal() {
+      detailModal.classList.add("open");
+      detailModal.setAttribute("aria-hidden", "false");
+      document.body.classList.add("modal-open");
+    }
+
+    function hideDetailModal() {
+      detailModal.classList.remove("open");
+      detailModal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("modal-open");
+    }
+
+    document.addEventListener("click", (event) => {
+      if (event.target.closest(".detail-button")) {
+        requestAnimationFrame(openDetailModal);
+      }
+
+      if (event.target.closest("[data-close-modal]")) {
+        hideDetailModal();
+      }
+    });
+
+    closeDetailModal.addEventListener("click", hideDetailModal);
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        hideDetailModal();
+      }
+    });
+  </script>
 </body>
 </html>
