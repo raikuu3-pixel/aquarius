@@ -4,134 +4,194 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aquarius Store</title>
-  <meta name="description" content="Aquarius Store menyediakan jasa joki Blox Fruits dengan tampilan biru mewah dan pemesanan cepat via admin.">
+  <meta name="description" content="Aquarius Store menyediakan jasa joki Blox Fruits dengan tampilan gelap modern dan pemesanan langsung ke admin.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
   <div class="page-shell">
-    <header class="hero">
+    <header class="masthead">
       <nav class="topbar">
-        <div class="brand">
+        <a class="brand-lockup" href="#home">
           <img class="brand-logo" src="aquarius.png" alt="Logo Aquarius Store">
-          <div>
-            <p class="brand-name">Aquarius Store</p>
-            <p class="brand-tag">Jasa Joki Blox Fruits</p>
+          <div class="brand-copy">
+            <span class="brand-name">Aquarius Store</span>
+            <span class="brand-subtitle">Jasa Joki Blox Fruits</span>
           </div>
+        </a>
+
+        <div class="topbar-actions">
+          <a class="mini-link" href="#catalog">Layanan</a>
+          <a class="mini-link" href="#contact">Kontak</a>
+          <a class="cta-pill" href="https://wa.me/6285123521438" target="_blank" rel="noreferrer">Chat Admin</a>
         </div>
-        <a class="topbar-link" href="https://wa.me/6285123521438" target="_blank" rel="noreferrer">Chat Admin</a>
       </nav>
 
-      <section class="hero-content">
-        <div class="hero-copy">
-          <p class="eyebrow">Aquarius Store</p>
-          <h1>Jasa joki Blox Fruits Murah</h1>
-          <p class="hero-text">
-            Tersedia beberapa layanan joki dengan daftar harga yang jelas dan pemesanan langsung ke admin.
+      <section class="hero-panel" id="home">
+        <div class="hero-left">
+          <p class="section-tag">Aquarius Store</p>
+          <h1>Panel joki yang tampil gelap, tajam, dan langsung ke inti.</h1>
+          <p class="hero-description">
+            Aquarius Store menyediakan layanan joki Blox Fruits dengan tampilan yang lebih modern,
+            daftar harga yang jelas, dan pemesanan langsung ke admin.
           </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://wa.me/6285123521438" target="_blank" rel="noreferrer">Pesan Sekarang</a>
-            <a class="btn btn-secondary" href="#pricing">Lihat Harga</a>
+
+          <div class="hero-buttons">
+            <a class="primary-action" href="https://wa.me/6285123521438" target="_blank" rel="noreferrer">Pesan via WhatsApp</a>
+            <a class="ghost-action" href="#catalog">Buka daftar harga</a>
+          </div>
+
+          <div class="hero-metrics">
+            <article class="metric-card">
+              <span class="metric-label">Mastery</span>
+              <strong>Mulai 2k</strong>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">V4</span>
+              <strong>Mulai 35k</strong>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Admin</span>
+              <strong>Langsung chat</strong>
+            </article>
           </div>
         </div>
 
-        <aside class="hero-card">
-          <img class="hero-logo" src="aquarius.png" alt="Logo Aquarius Store">
-          <p class="hero-card-label">Informasi Admin</p>
-          <h2>Pesan lewat WhatsApp</h2>
-          <p>Kalau butuh joki lain di luar daftar, Anda bisa langsung chat admin.</p>
-          <a class="hero-contact" href="https://wa.me/6285123521438" target="_blank" rel="noreferrer">
-            6285123521438
-          </a>
-        </aside>
+        <div class="hero-right">
+          <div class="showcase-card">
+            <div class="showcase-top">
+              <span class="status-dot"></span>
+              <p>Live storefront</p>
+            </div>
+
+            <div class="logo-frame">
+              <img src="aquarius.png" alt="Logo Aquarius Store">
+            </div>
+
+            <div class="showcase-info">
+              <div>
+                <p class="info-label">Tipe layanan</p>
+                <h2>Joki Blox Fruits</h2>
+              </div>
+              <p class="info-text">
+                Untuk material dan kebutuhan lain di luar daftar, langsung hubungi admin agar dibantu sesuai kebutuhan akun.
+              </p>
+            </div>
+
+            <div class="signal-bars">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
       </section>
     </header>
 
     <main>
-      <section class="highlights">
-        <article class="highlight-card">
-          <h3>Harga Transparan</h3>
-          <p>Harga layanan utama ditampilkan langsung agar mudah dicek.</p>
+      <section class="value-strip">
+        <article class="value-card">
+          <p class="value-number">01</p>
+          <h3>Daftar jelas</h3>
+          <p>Harga utama ditampilkan langsung supaya lebih mudah dicek tanpa tanya berulang.</p>
         </article>
-        <article class="highlight-card">
-          <h3>Respons Cepat</h3>
-          <p>Pemesanan diarahkan ke admin supaya proses tanya dan order lebih mudah.</p>
+        <article class="value-card">
+          <p class="value-number">02</p>
+          <h3>Proses singkat</h3>
+          <p>Pemesanan diarahkan ke admin agar komunikasi dan konfirmasi lebih cepat.</p>
+        </article>
+        <article class="value-card">
+          <p class="value-number">03</p>
+          <h3>Fleksibel</h3>
+          <p>Kalau layanan yang dicari belum ada di daftar, Anda tetap bisa langsung konsultasi.</p>
         </article>
       </section>
 
-      <section class="pricing-section" id="pricing">
-        <div class="section-heading">
-          <p class="eyebrow">Daftar Layanan</p>
-          <h2>List jualan Aquarius Store</h2>
+      <section class="catalog-section" id="catalog">
+        <div class="catalog-head">
+          <div>
+            <p class="section-tag">Daftar Layanan</p>
+            <h2>Harga jasa yang tersedia</h2>
+          </div>
+          <p class="catalog-copy">
+            Semua paket utama ditampilkan di bawah ini. Untuk kebutuhan tambahan, langsung lanjut ke admin.
+          </p>
         </div>
 
-        <div class="pricing-grid">
-          <article class="price-card featured">
-            <div class="card-head">
-              <p class="card-kicker">Joki Mastery</p>
-              <h3>Daftar mastery</h3>
+        <div class="catalog-grid">
+          <article class="catalog-card wide-card">
+            <div class="catalog-title">
+              <p>Joki Mastery</p>
+              <h3>Progress 100 mastery</h3>
             </div>
-            <ul>
+            <ul class="price-list">
               <li><span>Gun 100 mastery</span><strong>2k</strong></li>
               <li><span>Sword 100 mastery</span><strong>2k</strong></li>
               <li><span>Fruit 100 mastery</span><strong>2k</strong></li>
             </ul>
           </article>
 
-          <article class="price-card">
-            <div class="card-head">
-              <p class="card-kicker">Joki Fragment</p>
-              <h3>Daftar fragment</h3>
+          <article class="catalog-card compact-card">
+            <div class="catalog-title">
+              <p>Joki Fragment</p>
+              <h3>Fragment</h3>
             </div>
-            <ul>
+            <ul class="price-list">
               <li><span>1k fragment</span><strong>1k</strong></li>
             </ul>
           </article>
 
-          <article class="price-card">
-            <div class="card-head">
-              <p class="card-kicker">Joki V4</p>
-              <h3>Harga joki V4</h3>
+          <article class="catalog-card">
+            <div class="catalog-title">
+              <p>Joki V4</p>
+              <h3>Progress race</h3>
             </div>
-            <ul>
+            <ul class="price-list">
               <li><span>Belum pull lever / mirage</span><strong>70k</strong></li>
               <li><span>Sudah pull lever / mirage</span><strong>35k</strong></li>
             </ul>
           </article>
 
-          <article class="price-card">
-            <div class="card-head">
-              <p class="card-kicker">Joki V2 & V3</p>
-              <h3>Harga joki race</h3>
+          <article class="catalog-card">
+            <div class="catalog-title">
+              <p>Joki V2 & V3</p>
+              <h3>Upgrade race</h3>
             </div>
-            <ul>
+            <ul class="price-list">
               <li><span>Joki V3</span><strong>20k</strong></li>
               <li><span>Joki V2</span><strong>10k</strong></li>
             </ul>
           </article>
 
-          <article class="price-card material-card">
-            <div class="card-head">
-              <p class="card-kicker">Joki Material</p>
-              <h3>Silakan chat admin</h3>
+          <article class="catalog-card support-card">
+            <div class="catalog-title">
+              <p>Joki Material</p>
+              <h3>Hubungi admin</h3>
             </div>
-            <p class="material-copy">Untuk kebutuhan material atau layanan lain, langsung hubungi admin.</p>
-            <a class="inline-link" href="https://wa.me/6285123521438" target="_blank" rel="noreferrer">Hubungi Admin</a>
+            <p class="support-copy">Untuk material atau joki lain yang belum ada di daftar, langsung chat admin.</p>
+            <a class="support-link" href="https://wa.me/6285123521438" target="_blank" rel="noreferrer">Lanjut ke admin</a>
           </article>
         </div>
       </section>
 
-      <section class="note-section">
-        <div class="note-card">
-          <p class="eyebrow">Catatan</p>
-          <h2>Ada kebutuhan lain?</h2>
+      <section class="contact-banner" id="contact">
+        <div class="contact-copy">
+          <p class="section-tag">Kontak Admin</p>
+          <h2>Perlu layanan lain di luar list?</h2>
           <p>
-            Untuk layanan lain di luar daftar, langsung chat admin ke nomor
-            <a href="https://wa.me/6285123521438" target="_blank" rel="noreferrer">6285123521438</a>.
+            Untuk semua layanan lain yang belum tercantum, langsung hubungi admin agar dibantu sesuai kebutuhan.
           </p>
         </div>
+
+        <a class="contact-number" href="https://wa.me/6285123521438" target="_blank" rel="noreferrer">
+          6285123521438
+        </a>
       </section>
     </main>
   </div>
